@@ -15,6 +15,8 @@ public class Buffer {
     public Buffer(Queue<Integer> buffer, Lock lock) {
         this.buffer = buffer;
         this.lock = lock;
+        this.bufferIsnotFull = this.lock.newCondition();
+        this.bufferIsnotEmpty = this.lock.newCondition();
     }
 
     public void add(Integer product) {

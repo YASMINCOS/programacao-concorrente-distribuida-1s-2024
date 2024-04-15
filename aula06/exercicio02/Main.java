@@ -9,7 +9,7 @@ public class Main {
 
     private static int NUM_PRODUCERS = 4;
     private static int NUM_CONSUMERS = 2;
-    
+
     public static void main(String[] args) {
 
         Queue<Integer> productsQueue = new LinkedList<Integer>();
@@ -17,13 +17,11 @@ public class Main {
 
         Buffer buffer = new Buffer(productsQueue, lock);
 
-        for(int i = 0; i <NUM_PRODUCERS; i++){
-            new Producer(buffer, "produtor " +i+ 1).start();
+        for (int i = 0; i < NUM_PRODUCERS; i++) {
+            new Producer(buffer, "produtor " + i + 1).start();
         }
-        for(int i = 0; i <NUM_CONSUMERS; i++){
-            new Consumer(buffer, "produtor " +i+ 1).start();
+        for (int i = 0; i < NUM_CONSUMERS; i++) {
+            new Consumer(buffer, "produtor " + i + 1).start();
         }
-        
-        
     }
 }
