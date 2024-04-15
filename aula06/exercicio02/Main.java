@@ -18,10 +18,10 @@ public class Main {
         Buffer buffer = new Buffer(productsQueue, lock);
 
         for (int i = 0; i < NUM_PRODUCERS; i++) {
-            new Producer(buffer, "produtor " + i + 1).start();
+            new Producer(buffer, "produtor " + (i + 1)).start();
         }
         for (int i = 0; i < NUM_CONSUMERS; i++) {
-            new Consumer(buffer, "produtor " + i + 1).start();
+            new Consumer(buffer, "produtor " + (i + 1)).start();
         }
     }
 }
