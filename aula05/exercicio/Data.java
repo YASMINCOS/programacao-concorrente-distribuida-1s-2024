@@ -8,6 +8,7 @@ public class Data {
         // enquanto o recebimento nao termina eu espero
         while (!isSending) {
             try {
+                //aguarda recebimento
                 wait();
             } catch (InterruptedException e) {
                 System.out.println("Thread foi interrompida");
