@@ -20,8 +20,5 @@ public class Main {
        tchau.start();
        tchau2.join();
 
-
-
-    }
-    
+    }   
 }
