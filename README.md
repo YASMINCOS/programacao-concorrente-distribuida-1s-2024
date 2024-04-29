@@ -12,6 +12,8 @@ Este repositório contém material pratico e recursos relacionados ao curso de P
 
 - **Locks**: Estudo sobre locks.
 
+-**Semaforos**:
+
 ## Estrutura do Repositório
 
 - `aulas/`: Este diretório contém material de apoio para as aulas, como exercícios feitos, notas e exemplos de código.
