@@ -11,11 +11,11 @@ public class Main {
         Filosofos [] filosofos = null;
 
         for(int i = 0; i < 5; i++){
-              garfos[i] = new ReentrantLock();
+           //   garfos[i] = new ReentrantLock();
         }
 
         for (int i = 0; i <5 ; i++) {
-            filosofos[i] = new Filosofos(Prato(10), )
+           // filosofos[i] = new Filosofos(Prato(10), )
             
         }
     }
