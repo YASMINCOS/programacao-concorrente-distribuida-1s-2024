@@ -36,7 +36,7 @@ public class Filosofo implements Runnable {
                 System.out.println("Filósofo " + id + " está comendo.");
 
                 // Libera o garfo da esquerda
-                //evitar deadlock, que todos peguem um gargo e nao consigam avancar
+                //evitar deadlock, que todos peguem um gargo e nao consigam avancar, 
                 garfos[id].release();
                 System.out.println("Filósofo " + id + " liberou o garfo esquerdo.");
 
